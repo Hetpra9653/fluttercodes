@@ -39,11 +39,24 @@ class _HomePageState extends State<HomePage> {
     return new Container(
       padding: const EdgeInsets.all(5.0),
       child: new Center(
-          child: new Column(children: <Widget>[
-        new Text(data),
+          child: new Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+        new Text(
+          data,
+          style: new TextStyle(
+            color: Colors.redAccent,
+            fontSize: 25.0,
+          ),
+        ),
         new RaisedButton(
-          child: new Text("click"),
+          child: new Text(
+            "click",
+            style: new TextStyle(
+              color: Colors.white,
+              fontSize: 25.0,
+            ),
+          ),
           onPressed: _newtext,
+          color: Colors.blueGrey,
         )
       ])),
     );
